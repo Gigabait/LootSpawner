@@ -30,7 +30,7 @@ function rspawns.Register(pos,class,time)
             for k,v in pairs(player.GetAll()) do
                 if v:IsAdmin() then
                     v:ChatPrint("[Rspawner]: Could not spawn entity '" .. class .. "'! It might not exist on the server!")
-                    return
+                    return -- too lazy to fix this return lmao
                 end
             end
         end
